@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+.nav {
+
+  width: 100vw;
+
+  background-color: gray;
+}
+li {
+  padding: 5px 0px;
+  display: inline-block;
+  /*background-color: gray;*/
+}
+li a {
+  font-family: 'Staatliches', cursive;
+  padding: 16px 47px;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+.active {
+  background-color: lightblue;
+}
