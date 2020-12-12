@@ -1,0 +1,104 @@
+:root {
+  --sizeMultiplier: (100vw / 1920);
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+li {
+  padding: 5px 0px;
+  display: inline-block;
+  /*background-color: gray;*/
+}
+li a {
+  font-family: 'Staatliches', cursive;
+  padding: 4px 47px;
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+}
+table{
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.divExample{
+  background-color: lightblue;
+}
+.notThisFont *{
+  font-size: revert;
+}
+.active {
+  background-color: lightblue;
+}
+.nav {
+
+  width: 100vw;
+  background-color: gray;
+}
+.body {
+  z-index: -100;
+  position: absolute;
+}
+
+
+
+
+
+table tr td div :not(.){
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+#exampleCSSSelector2{
+  width: 50px;
+}
+.exampleCSSSelector {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+@keyframes animationExample{
+  0% {width: 100px; background-color:red;}
+  25% {height: 200px;background-color:green;}
+  100% {width: 50px; background-color:blue;}
+}
+.animationExample {
+  animation: animationExample 5s infinite;
+}
+
+
+
+.margin {
+  background-color: lightgray;
+  padding: 0px 50px 40px 50px;
+  text-align: center;
+}
+.border {
+  background: gray;
+  padding: 0px 50px 40px 50px;
+}
+.padding {
+  background-color: lightgreen;
+  padding: 0px 50px 40px 50px;
+}
+.content {
+  background-color: white;
+}

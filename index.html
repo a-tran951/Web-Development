@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Personal Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+  <div class="body" id="mainPage">
+
+
+    <div class="nav">
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#htmlPage">HTML Sheet</a></li>
+        <li><a href="#cssPage">CSS Sheet</a></li>
+        <li><a href="#javaScriptPage">Javascript Sheet</a></li>
+        <li style="float:right"><a href="#aboutPage">About</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <p>Discover and Learn</p>
+    </div>
+    <div class="dividerWrap">
+      <div class="divider default" id="aboutPage">
+        <p><a href="#">About</a>
+          <p />
+      </div>
+    </div>
+    <div class="aboutMe default">
+      <div class="aboutExplain">
+        <p>&nbsp;&nbsp; My name is Alex Tran, I am a student of bow valley collage,&nbsp;&nbsp;
+          <p />
+        <p>&nbsp;&nbsp; I created this website with my own code and knowledge,&nbsp;&nbsp;
+          <p />
+        <p>&nbsp;&nbsp; to demonstrate what I have learned over the past semester,&nbsp;&nbsp;
+          <p />
+        <p>&nbsp;&nbsp; Click the headers of each divider to take you to a cheat sheet&nbsp;&nbsp;
+          <p />
+        <p>&nbsp;&nbsp; of the things I learned.&nbsp;&nbsp;
+          <p />
+        <p>&nbsp;&nbsp; "About" will take you back to the top&nbsp;&nbsp;
+          <p />
+      </div>
+    </div>
+    <div class="dividerWrap">
+      <div class="divider default" id="htmlPage">
+        <p><a href="PHTML.html">HTML Sheet</a>
+          <p />
+      </div>
+    </div>
+    <div class="htmlSheet default">
+      <div class="htmlExplain">
+        <pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My Personal Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;p&gt; Hello world &lt;/p&gt;
+      &lt;a href="#"&gt; Back to top &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+      </div>
+      <div class="htmlExample">
+        <p> Hello world</p>
+        <a href="#"> Back to top </a>
+      </div>
+
+    </div>
+    <div class="dividerWrap">
+      <div class="divider default" id="cssPage">
+        <p><a href="PCSS.html">CSS Sheet</a>
+          <p />
+      </div>
+    </div>
+    <div class="cssSheet default">
+      <div class="cssExplain">
+        <pre>
+
+@keyframes coolExample {
+  0% {background-color:red;left:calc(var(--sizeMultiplier) * 1100);
+  top:calc(var(--sizeMultiplier) * 400);border-radius: 50%}
+  25% {background-color:yellow;left: calc(var(--sizeMultiplier) * 1250);
+  top:calc(var(--sizeMultiplier) * 400)}50% {background-color:green;
+  left: calc(var(--sizeMultiplier) * 1250);top:calc(var(--sizeMultiplier) * 500);
+  border-radius: 0%}75% {background-color:lightblue;
+  left: calc(var(--sizeMultiplier) * 1250);top:calc(var(--sizeMultiplier) * 300)}
+  100% {background-color:red;left: calc(var(--sizeMultiplier) * 1100);
+  top:calc(var(--sizeMultiplier) * 400);border-radius: 50%}
+}
+
+ //This is to set animation to a Div
+
+.cssExample{
+  background-color: lightblue;
+  animation-name: coolExample;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+</pre>
+      </div>
+
+      <div class="cssExample">
+      </div>
+
+    </div>
+    <div class="dividerWrap">
+      <div class="divider default" id="javaScriptPage">
+        <p><a href="PJS.html">JavaSript Sheet</a>
+          <p />
+      </div>
+    </div>
+    <div class="javaScriptSheet default">
+      <div class="JavaSriptExplain">
+        <pre>
+
+function calculateSum(){
+  let firstNum = parseInt(document.getElementById('inputOne').value);
+  let secondNum = parseInt(document.getElementById('inputTwo').value);
+  document.getElementById('outputNum').value = firstNum + secondNum;
+}
+
+ // This is to apply function to an element:
+ &lt;button type="button" <b>onclick="calculateSum()"</b> name="button"&gt;
+ Press to Calculate sum
+ &lt;/button&gt;
+<pre/>
+      </div>
+      <div class="JavaSriptExample">
+        <input type="text" name="" id="inputOne" value="" placeholder="First Number">
+        <input type="text" name="" id="inputTwo" value="" placeholder="Second Number">
+        <br>
+        <button type="button" onclick="calculateSum()" name="button">Press to Calculate sum</button>
+        <input type="text" id="outputNum" value="">
+      </div>
+    </div>
+    <div class="footer">
+      <script src="personalscript.js" charset="utf-8"></script>
+    </div>
+  </div>
+</body>
+
+</html>

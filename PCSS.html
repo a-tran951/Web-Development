@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Personal Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="personalhtml.css">
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="PHTML.html">HTML Sheet</a></li>
+      <li class="active"><a href="PCSS.html">CSS Sheet</a></li>
+      <li><a href="PJS.html">Javascript Sheet</a></li>
+    </ul>
+  </div>
+  <div class="">
+    <table>
+      <tr>
+        <th>CSS</th>
+        <th>Syntax</th>
+        <th>Example</th>
+        <th>Output Example</th>
+      </tr>
+      <tr>
+        <td>Selectors</td>
+        <td>
+          <pre>
+.<i>class</i> = Class selector
+#<i>id</i> = id selector
+* = selects all
+<i>element</i> = selects element
+</pre>
+        </td>
+        <td>
+        <pre>
+div {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+#exampleCSSSelector2{
+  width: 50px;
+}
+.exampleCSSSelector {
+  background-color: blue;
+}</pre>
+      </td>
+        <td>
+          <div class="exampleCSSSelector">
+          </div>
+          <div id="exampleCSSSelector2">
+          </div>
+          <div class="exampleCSSSelector3">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Size</td>
+        <td><pre>
+width: 100px
+height: 100px</pre></td>
+        <td>Above example</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Animations</td>
+        <td><pre>@keyframes {
+0% {<i>Starting frame with css</i>}
+...
+100% {<i>Ending frame with css</i>}
+}
+</pre></td>
+        <td>
+<pre>
+@keyframes animationExample{
+  0% {width: 100px; background-color:red;}
+  25% {height: 200px;background-color:green;}
+  100% {width: 50px; background-color:blue;}
+}
+.animationExample {
+  animation: animationExample 5s infinite;
+}
+</pre>
+
+        </td>
+        <td>
+          <div class="animationExample">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Box Model</td>
+        <td style="font-size: 20px">All elements use box model to determine the size and functionality margin only provides space padding is like expanding the content box, you can interact with padding and content but not margin</td>
+        <td>
+          <div class="margin">
+            Margin
+            <div class="border">
+              Border
+              <div class="padding">
+                Padding
+                <div class="content">
+                  Content
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

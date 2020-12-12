@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="personalscript.css">
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PHTML.html">HTML Sheet</a></li>
+        <li><a href="PCSS.html">CSS Sheet</a></li>
+        <li class="active"><a href="PJS.html">Javascript Sheet</a></li>
+      </ul>
+    </div>
+    <div class="JSExample1">
+      <label for="inputText">Please enter a sentence (String): </label>
+      <input id="inputText" type="text" name="" value="">
+      <br>
+      <label for="outputText">Your formatted string is:       </label>
+      <input id="outputText" type="text" name="" value="">
+      <br>
+      <input onclick="myFunction()" type="button" name="convertButton" value="Show Formatted String">
+    </div>
+    <div class="JSExample2">
+      <label for="inName">Enter your name:</label>
+      <input id="inName" type="text" name="" value="">
+      <br>
+      <button onclick="myName()" class="myBtn" type="button" name="button">Click me</button>
+      <br>
+      <label for="outName">Formatted Name</label>
+      <input id="outName" type="text" name="" value="">
+      <p id="demo"></p>
+    </div>
+    <div class="JSExample3">
+      <label for="inNum">Enter a number to be squared:</label>
+      <input id="inNum" type="text" name="" value="">
+      <label id="labelOutNum" for="outNum" style="display:none">Squared Number:</label>
+      <input id="outNum"style="display:none" type="text" name="" value="">
+      <button onclick="calcSquare()" type="button" name="button">Calculate Square</button>
+    </div>
+  </body>
+  <script src="personalscript.js" charset="utf-8"></script>
+</html>

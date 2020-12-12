@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Personal Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="personalhtml.css">
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="PHTML.html">HTML Sheet</a></li>
+      <li><a href="PCSS.html">CSS Sheet</a></li>
+      <li><a href="PJS.html">Javascript Sheet</a></li>
+    </ul>
+  </div>
+  <div class="">
+    <table>
+      <tr>
+        <th>Attribute</th>
+        <th>Comments</th>
+        <th>Example</th>
+        <th>Output Example</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;
+&lt;td&gt;
+        </pre>
+        </td>
+        <td>
+          <pre>
+Creates table
+Creates table rows
+Creates table headers
+Creates table cells
+          </pre>
+        </td>
+        <td>
+          <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;This&lt;/th&gt;;
+    &lt;th&gt;This&lt;/th&gt;;
+    &lt;th&gt;This&lt;/th&gt;;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;Table&lt;/td&gt;
+    &lt;td&gt;
+    colspan explands the cell (td) by 2 columns
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;<pre/>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <th>This</th>
+                <th>is</th>
+                <th>the header cell</th>
+              </tr>
+              <tr>
+                <td colspan="2">Table</td>
+                <td>colspan expands the cell (td) by 2 columns</td>
+              </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+          <td>&lt;button&gt;</td>
+          <td>
+            <p>Button will function with onclick="functionName()"</p>
+          </td>
+          <td>
+            <pre>
+&lt;button type="button" name="button"&gt;hello&lt;/button&gt;</pre>
+          </td>
+          <td><button type="button" name="button">hello</button></td>
+        </tr>
+        <tr>
+          <td>&lt;body&gt;</td>
+          <td>This table is nested in the body</td>
+          <td>
+            <pre>
+&lt;body&gt;
+...
+&lt;/body&gt;</pre>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt; to &lt;h6&gt;</td>
+        <td>These are different sized headers</td>
+        <td>
+          <pre>
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;h&gt;Default header&lt;/h&gt;
+          </pre>
+        </td>
+        <td class="notThisFont">
+            <h1>header 1</h1>
+            <h2>header 2</h2>
+            <h3>header 3</h3>
+            <h4>header 4</h4>
+            <h5>header 5</h5>
+            <h6>header 6</h6>
+            <h>header 1</h>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;</td>
+        <td>Creates a line break</td>
+        <td>
+<pre>&lt;p&gt;This is a &lt;br&gt; line break&lt;/p&gt;</pre>
+</td>
+        <td><p>This is a <br> line break</p></td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>Creates a paragraph</td>
+        <td>
+          <pre>
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+</pre>
+        </td>
+        <td><p>This is a paragraph</p></td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>Creates an elemented that is most useful for CSS</td>
+        <td>
+<pre>&lt;div&gt;This is a div &lt;/div&gt;</pre>
+        </td>
+        <td><div class="divExample">
+          This is a div
+        </div> </td>
+      </tr>
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>Mostly used to link an external CSS file</td>
+        <td><pre>&lt;link rel="stylesheet" href="css/personalhtml.css"&gt;</pre></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;script&gt;</td>
+        <td>Mostly used to link an external Javascript File</td>
+        <td>
+<pre>&lt;script src="somefile.js" charset="utf-8"&gt;&lt;/script&gt;</pre></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>Used to link a image link or from a file stored in the same server as html</td>
+        <td>
+<pre>&lt;img src="cool-background.png"&gt;</pre></td>
+        <td><img src="cool-background.png" alt=""></td>
+      </tr>
+      <tr>
+        <td>&lt;input&gt;</td>
+        <td>Creates input fields</td>
+        <td>
+            <pre>
+&lt;input type="text" value=""&gt;
+</pre>
+        </td>
+        <td><input type="text" name="" value=""></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
